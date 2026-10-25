@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_date"
+        android:title="Date"
+        android:icon="@drawable/ic_calendar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_month"
+        android:title="Month"
+        android:icon="@drawable/ic_month"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_year"
+        android:title="Year"
+        android:icon="@drawable/ic_year"
+        app:showAsAction="ifRoom" />
+</menu>
