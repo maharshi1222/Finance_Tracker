@@ -123,8 +123,7 @@ public class Analysis extends AppCompatActivity {
                             totalIncome += amount;
                         } else if (type.equalsIgnoreCase("Expense")) {
                             totalExpense += amount;
-                            categoryExpenseMap.put(category,
-                                    categoryExpenseMap.getOrDefault(category, 0f) + amount.floatValue());
+                            categoryExpenseMap.put(category,categoryExpenseMap.getOrDefault(category, 0f) + (float) amount);
                         }
                     }
 
