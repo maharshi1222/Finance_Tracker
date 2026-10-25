@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Logo Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="12dp"
+            app:strokeColor="#000000"
+            app:strokeWidth="4dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/budgetbee_logo" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Quote -->
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="." />
+
+        <TextView
+            android:id="@+id/quote3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Do not save what is left after spending; instead spend what is left after saving."
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <!-- Content Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/tabcard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#F8F1E9"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            app:shapeAppearanceOverlay="@style/TopRoundedStyle">
+<!--            android:backgroundTint="#FFB6C1"-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Tabs -->
+                <LinearLayout
+                    android:id="@+id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Login"
+                        android:textAlignment="center"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="SignUp"
+                        android:textAlignment="center"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Underline indicator -->
+                <View
+                    android:id="@+id/indicator"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#000000" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:scrollbars="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/loginContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- Email/Phone -->
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="30dp"
+                            android:backgroundTint="#FFFFFF"
+                            app:cardCornerRadius="16dp"
+                            app:strokeColor="#B8C8C8"
+                            app:strokeWidth="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <EditText
+                                    android:id="@+id/email_phone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:hint="Email / Phone Number"
+                                    android:inputType="textEmailAddress|text"
+                                    android:paddingStart="12dp"
+                                    android:textSize="22sp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- Password -->
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="16dp"
+                            android:backgroundTint="#FFFFFF"
+                            app:cardCornerRadius="16dp"
+                            app:strokeColor="#B8C8C8"
+                            app:strokeWidth="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <EditText
+                                    android:id="@+id/password"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:hint="Password"
+                                    android:inputType="textPassword"
+                                    android:paddingStart="12dp"
+                                    android:textSize="22sp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp" />
+
+                        <!-- Login Button -->
+                        <Button
+                            android:id="@+id/btnlogin"
+                            android:layout_width="190dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:backgroundTint="#FFFFFF"
+                            android:text="Login"
+                            android:textColor="#000000"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp" />
+
+                        <!-- OR separator -->
+                        <TextView
+                            android:id="@+id/or"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="OR"
+                            android:textAlignment="center"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <!-- Google Sign-in Button -->
+                        <TextView
+                            android:id="@+id/textView32"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/googleBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:backgroundTint="#FFFFFF"
+                            app:cardCornerRadius="12dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            app:strokeColor="#B8C8C8"
+                            app:strokeWidth="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="12dp">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:src="@drawable/google" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Continue with Google"
+                                    android:textColor="#000000"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</LinearLayout>

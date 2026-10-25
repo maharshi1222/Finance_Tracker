@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/budgetbee_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/budgetbee_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Finance">
+        <activity
+            android:name=".feedback"
+            android:exported="false" />
+        <activity
+            android:name=".Finance"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeInformation"
+            android:exported="false" />
+        <activity
+            android:name=".AboutApp"
+            android:exported="false" />
+        <activity
+            android:name=".Add_transaction"
+            android:exported="false" />
+        <activity
+            android:name=".Add_reminder"
+            android:exported="false" />
+        <activity
+            android:name=".More"
+            android:exported="false" />
+        <activity
+            android:name=".Analysis"
+            android:exported="false" />
+        <activity
+            android:name=".Reminder"
+            android:exported="false" />
+        <activity
+            android:name=".Transaction"
+            android:exported="false" />
+        <activity
+            android:name=".HomeScreen"
+            android:exported="false" />
+        <activity
+            android:name=".signUp"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".difference"
+            android:exported="false" />
+        <activity
+            android:name=".Quote1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

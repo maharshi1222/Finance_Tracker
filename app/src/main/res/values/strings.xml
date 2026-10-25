@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BudgetBee</string>
+    <string name="default_web_client_id">476909013257-8c4650rgdl5t5aeqseadn7j4tjq5ds56.apps.googleusercontent.com</string>
+
+    <string-array name="category_list">
+        <item>Select your category</item>
+        <!-- Expense -->
+        <item>Food</item>
+        <item>Transport</item>
+        <!-- Income -->
+        <item>Salary</item>
+        <item>Business</item>
+        <!-- Other -->
+        <item>Other</item>
+    </string-array>
+
+
+</resources>
